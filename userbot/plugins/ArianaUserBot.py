@@ -10,9 +10,9 @@ from userbot import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
 
-bot = "ArianaUserBot"
+bot = "TCLUserBot"
 
-@borg.on(admin_cmd("ArianaUserBot By @BinBhai ?(.*)"))
+@borg.on(admin_cmd("TCLUserBot By @Telugucartoonlover?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
