@@ -24,7 +24,7 @@ async def _(event):
             "@telugucartoonlover tera baap",
             "@telugucartoonlover is bot ka creator",
             "@telugucartoonlover bot ko jaan dene wala",
-            "@telugucartoonlover owner of ArianaUserBot ",
+            "@telugucartoonlover owner of TCLUserBot ",
             "tujhe aur kya chaiye vo hai mere sath",
             "tera baap",
             "@telugucartoonlover"
