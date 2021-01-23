@@ -1,4 +1,4 @@
-# ArianaUserBot
+# TCLUserBot
 
 <p align="center">
 <img src="TCLUserBot.png" alt="TCLUserBot">
