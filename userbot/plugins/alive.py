@@ -18,9 +18,9 @@ ALIVE_caption += "**Ariana  OS** : `3.14`\n\n"
 ALIVE_caption += "**Current Sat** : `TCLUserBot Sat-2.95`\n\n"
 ALIVE_caption += f"**My Boss** : {DEFAULTUSER} \n\n"
 ALIVE_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
-ALIVE_caption += "**Bot Made By @telugucartoonlover** \n\n"
-ALIVE_caption += "Copyright By [DEEPANIK](GitHub.com/Akhilsivakosana1)\n\n"
-ALIVE_caption += "[Deploy ArianaUserBot](GitHub.com/deepanik/TCLUserBot)"
+ALIVE_caption += "**Bot Made By @royalswillaspro for @telugucartoonlover** \n\n"
+ALIVE_caption += "Copyright By [AKHILSIVA](t.me/telugucartoonlover)\n\n"
+ALIVE_caption += "[Deploy TCLUserBot](https://github.com/Akhilsivakosana1/TCLUSERBOT)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def Ariana(alive):
