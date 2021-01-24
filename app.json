@@ -29,11 +29,11 @@
     },
     "ALIVE_NAME": {
       "description": "Fill your Full name or Username like @telugucartoonlover",
-      "value": "@testttttttttgg"
+      "value": ""
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "2091854"
+      "value": ""
     },
     "REM_BG_API_KEY": {
       "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
@@ -47,19 +47,19 @@
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "0b252807325d43f23cc6176b7fbaabfc"
+      "value": ""
     },
     "PLUGIN_CHANNEL": {
-      "description": "Create a private group add rose  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001382061831"
+      "description": "Create a private group add TCL group manager  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
+      "value": ""
     },
     "PRIVATE_GROUP_ID": {
-      "description": "Create a private group add rose bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001382061831"
+      "description": "Create a private group add TCL group manager  bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
+      "value": ""
     },
     "STRING_SESSION": {
       "description": "Get this value from Termux Python 3",
-      "value": "1AZWarzwBu44AiAS5-0dQau2fn0ZASQOccR-q9qEO7CElkMaaE6YwsdQJ7WcTbd7YjiVJHWrUtdEpdDuffAVhRBQXFa2D_Lrb7RuGUtKPyK6kSyF8WxdemLVck1iulYuG4mAcymOO_J_7Kbt9G8VYBZx1-ceQ9W9rdZT_P6LrJ--GXOwQx4WVT7M-sol3M4XIcUczOuGw2y-unus5njL5Jz8yAr76lc9p7HvwgX_8VlzpT_jlCQxrJgmp4KbtlR1vnA95mYqRf2o7AOhqC8PwaMjdXRhMunXzNdM-L9x_qp0wyK3UIQkvJTid7Mi1pWgHCm43x4rYYukD9uy2lFiWe8161i-itF8="
+      "value": ""
     },
     "GITHUB_ACCESS_TOKEN": {
       "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
@@ -78,7 +78,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
-      "value": "3c23e928-5910-4d4e-b556-c488896cee9f"
+      "value": ""
     },
     "HEROKU_APP_NAME": {
       "description": "The Value of App Name you filled in right on top.Required for updater to work.",
@@ -86,11 +86,11 @@
     },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn of inline Mode on bot settings. Get it.",
-      "value": "1576291726:AAHD7lCjF9e0edKz4ozoTyiA83g44N4IQJk"
+      "value": ""
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
-      "value": "1582408913",
+      "value": "",
       "required": true
     },
     "CHROME_BIN": {
@@ -105,7 +105,7 @@
     },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot",
-      "value": "@Kdjdjdhmxjznnbot"
+      "value": ""
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
@@ -118,13 +118,13 @@
     },
     "TZ": {
       "description": "Required for Correct Time for autopic get from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-      "value": "Asia/Kolkata",
+      "value": "",
       "required": false
     },
 	
 	"SENDER_ID": {
-      "description": "Get Your Id From Sangmata Info Bot And Paste Your Permanent Id Here ",
-      "value": "1582408913",
+      "description": "Get Your Id From TCL group manager Bot And Paste Your Permanent Id Here ",
+      "value": "",
       "required": true
     },
 	
