@@ -23,7 +23,7 @@ Best User Bot To Manage Your Telegram Account
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Akhilsivakosana1/TCLUSERBOT/)
 
 Take Sting session from Replit
-[![Run on Repl.it](https://repl.it/badge/github/Deepanik/arianauserbot/)](https://repl.it/@deepanik/generatestringsession)
+[![Run on Repl.it](https://repl.it/badge/github/Deepanik/arianauserbot/)](https://generatestringsession.akhilsiva.repl.run)
 -------------------------------------------------
 
 ## Mandatory Vars
