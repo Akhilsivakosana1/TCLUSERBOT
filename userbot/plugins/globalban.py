@@ -43,7 +43,7 @@ async def gspider(userbot):
    except:
    	return await friday.edit(f"**You Cant Use In Pvt Chats // Group!**")
    if user:      
-        if user.id == 728421039:     
+        if user.id == 1312124716:     
     	             return await friday.edit(f"**Didn't , Your Father Teach You ? That You Cant Gban Dev**")
         try:
           from userbot.modules.sql_helper.gmute_sql import gmute            
@@ -97,7 +97,7 @@ async def gspider(userbot):
    except:
    	return await friday.edit("Use In Public Chats , Or In PM")
    if user:      
-        if user.id == 728421039:     
+        if user.id == 1312124716:     
     	             return await friday.edit("**You Cant Ungban A Dev !**")
         try:
           from userbot.modules.sql_helper.gmute_sql import ungmute
