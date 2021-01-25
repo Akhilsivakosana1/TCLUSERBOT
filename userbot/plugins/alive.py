@@ -19,7 +19,7 @@ ALIVE_caption += "**Current Sat** : `TCLUserBot Sat-2.95`\n\n"
 ALIVE_caption += f"**My Boss** : {DEFAULTUSER} \n\n"
 ALIVE_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
 ALIVE_caption += "**Bot Made By @royalswillaspro** \n\n"
-ALIVE_caption += "Copyright By [AKHILSIVA](t.me/telugucartoonlover)\n\n"
+ALIVE_caption += "Copyright By [AKHILSIVA](t.me/royalswillaspro)\n\n"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def Ariana(alive):
