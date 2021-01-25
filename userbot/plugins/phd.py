@@ -1,5 +1,5 @@
 """
-Pornhub downloader by @BinBhai
+Pornhub downloader by @telugucartoonlover
 Syntax: .phd link
 """
 
@@ -107,7 +107,7 @@ async def _(event):
 
                   video_hehe = await conv.get_response()
 
-                  await borg.send_file(event.chat_id, video_hehe, caption="`🤤 Video Uploaded by` [@BinBhai](hhttps://github.com/deepanik/ArianaUserBot)!🤤\n**Title:** `{}`".format(title))
+                  await borg.send_file(event.chat_id, video_hehe, caption="`🤤 Video Uploaded by` [@telugucartoonlover](hhttps://t.me/telugucartoonlover")!🤤\n**Title:** `{}`".format(title))
 
               elif "Unfortunately" in response.text:
 

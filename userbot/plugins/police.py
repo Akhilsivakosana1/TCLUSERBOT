@@ -8,7 +8,7 @@ from uniborg.util import admin_cmd
 from userbot import ALIVE_NAME
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ArianaUserBot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TCLUserBot"
 
 @borg.on(admin_cmd(pattern=r"police"))
 
@@ -37,7 +37,7 @@ async def _(event):
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-            "[Arianauserbot](hhttps://github.com/deepanik/ArianaUserBot) **Police Service Here**"
+            "[TCLuserbot](hhttps://t.me/telugucartoonlover) **Police Service Here**"
  ]
 
     for i in animation_ttl:
