@@ -63,7 +63,7 @@ async def _(event):
             "Bharata  = India"
             "Bhagya  = Destiny"
             "Vidhata = Dispenser"
-            "Jay He, Jay He, Jay             "He, Jay Jay Jay Jay             "He = Victory, Victory, Victory, Victory Forever..."
+            "Jay He, Jay He, Jay He, Jay Jay Jay Jay He = Victory, Victory, Victory, Victory Forever..."
             "🇮🇳🌅: Congratulation to all of us.Our national anthem "Jana Gana Mana... "is declared as the "BEST ANTHEM OF THE WORLD"by UNESCO. Just few minutes ago.
 
 Kindly share this. 
