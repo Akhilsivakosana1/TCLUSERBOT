@@ -19,7 +19,7 @@ from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 from var import Var
 
-UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
+UPSTREAM_REPO_URL = https://github.com/Akhilsivakosana1/TCLUSERBOT
 UPSTREAM_REPO_BRANCH = "master"
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 HEROKU_API_KEY = Var.HEROKU_API_KEY
