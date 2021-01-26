@@ -64,64 +64,7 @@ async def _(event):
             "Bhagya  = Destiny"
             "Vidhata = Dispenser"
             "Jay He, Jay He, Jay He, Jay Jay Jay Jay He = Victory, Victory, Victory, Victory Forever..."
-            "🇮🇳🌅: Congratulation to all of us.Our national anthem Jana Gana Mana... is declared as the BEST ANTHEM OF THE WORLD by UNESCO. Just few minutes ago.
-
-Kindly share this. 
-Very proud to be an INDIAN.
-🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳👏👏👏👏👏👏👏😊😊😊😊😊😊😊🇮🇳🇮🇳🇮🇳🇮🇳🚩🌹🌹🌹
-💦 Meaning of our National Anthem 💦💦
-💎💎💎💎💎💎💎💎
-🇮🇳 Please try to understand the meaning and pronounce it clearly.
-
-Word by word meaning..
-
-💦Jana            = People
-💦Gana            = Group
-💦Mana           = Mind
-💦Adhinayaka= Leader
-💦Jaya He      = Victory 
-💦Bharata       = India
-💦Bhagya       = Destiny
-💦Vidhata      = Disposer
-💦Punjaba     = Punjab
-💦Sindhu       = Indus
-💦Gujarata    = Gujarat
-💦Maratha    = Marati 💦Maharashtra
-💦Dravida      = South
-💦Utkala        = Orissa
-💦Banga        = Bengal
-💦Vindhya     =Vindhyas
-💦Himachal   =Himalay
-💦Yamuna     = Yamuna
-💦Ganga        = Ganges
-💦Uchchhala = Moving
-💦Jaladhi      = Ocean
-💦Taranga    = Waves
-💦Tava          = Your
-💦Shubh    =Auspicious
-💦Naame = name
-💦Jage     = Awaken
-💦Tava     = Your
-💦Shubha      = 💦Auspicious
-💦Aashisha = Blessings
-💦Maage     = Ask
-💦Gaahe      = Sing
-💦Tava        = Your
-💦Jaya        = Victory
-💦Gatha      = Song
-💦Jana       = People
-💦Gana      = Group
-💦Mangala = Fortune
-💦Dayaka   = Giver
-💦Jay He    = Victory Be
-💦Bharata  = India
-💦Bhagya  = Destiny
-💦Vidhata = Dispenser
-💦Jay He, Jay He, Jay 💦He, Jay Jay Jay Jay 💦He = Victory, Victory, Victory, Victory Forever...
-
-this plugin credits goes to :- @telugucartoonlover
-
-JAI HIND💦💦💦💦💦HAPPY REPUBLIC-DAY ★★★★☆☆☆★★★★♣♣♣♧♧♣♣♣"
+            "Plug-in credits goes to @telugucartoonlover"
             
          ]
     for i in animation_ttl:
