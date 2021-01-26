@@ -9,33 +9,25 @@ from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
 from userbot.utils import admin_cmd
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-if not PMPERMIT_PIC:
-    WARN_PIC = "https://telegra.ph/file/a8cf9812c35f9c04eac27.jpg"
+if PMPERMIT_PIC is None:
+  WARN_PIC = "https://telegra.ph/file/af4e4676b562554d05f3a.png"
 else:
-    WARN_PIC = PMPERMIT_PIC
+  WARN_PIC = PMPERMIT_PIC
 
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
-PM_ON_OFF = Config.PM_DATA
 
-DEFAULTUSER = (
-    str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-)
-CUSTOM_MIDDLE_PMP = (
-    str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "Protection By TCL🇮🇳"
-)
-USER_BOT_WARN_ZERO = "You Have Attempted To Spam Masters Inbox So Inorder To Avoid Over Spam , You Have Been Blocked By Userbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
+CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n`THIS IS ILLEGAL AND REGARDED AS A CRIME`"
+USER_BOT_WARN_ZERO = "`  You Have Been Blocked Due To Spamming Of My Masters Inbox.` "
+USER_BOT_NO_WARN = ("`Hello Ser ! This is` **ArianaUserBot**\n"
+                    "`Private Messaging Security Protocol ⚠️`\n\n"
+                    "**Welcome Sir This Is My Master\n"
+                    f"{DEFAULTUSER}'s Inbox**\n\n"
+                    f"{CUSTOM_MIDDLE_PMP} 🔥\n\n"
+                    "**Welcome To His Inbox PLease** 🔥 `/start` 🔥 To Continue ****")
 
-botisnoob = Var.TG_BOT_USER_NAME_BF_HER
-
-devs_id = [1312124716]
-
-USER_BOT_NO_WARN = (
-    "**Hello, This is TCL PM Protection Service ⚠️**\n\n"
-    f"`My Master {DEFAULTUSER} is Busy Right Now !` \n"
-    "**I Request You To Choose A Reason You Have Came For** 👀 \n\n"
-    f"**{CUSTOM_MIDDLE_PMP}**"
 
 if Var.PRIVATE_GROUP_ID is not None:
     @command(pattern="^.approve ?(.*)")
@@ -68,7 +60,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-          if chat.id == 1312124716:
+          if chat.id == 728421039:
             await event.edit("Why You tried to block my Creator, I Dont Like That now i will sleep for 100 seconds")
             await asyncio.sleep(100)
           else:
@@ -87,7 +79,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-          if chat.id == 1312124716:
+          if chat.id == 728421039:
             await event.edit("Sorry, I Can't Disapprove My Master")
           else:
             if pmpermit_sql.is_approved(chat.id):
@@ -210,7 +202,7 @@ from userbot.utils import admin_cmd
 import io
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events
-@bot.on(events.NewMessage(incoming=True, from_users=(1312124716)))
+@bot.on(events.NewMessage(incoming=True, from_users=(728421039,1360577346,998981230)))
 async def hehehe(event):
     if event.fwd_from:
         return
