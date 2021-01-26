@@ -104,7 +104,14 @@ if ENV:
         MONGO_URI = os.environ.get("MONGO_URI", None)
         #Lydia API
         LYDIA_API = os.environ.get("LYDIA_API",None)
-        PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
+        PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None)
+        UPSTREAM_REPO = os.environ.get(
+
+            "UPSTREAM_REPO", "https://github.com/Akhilsivakosana1/TCLUSERBOT"
+
+        ))
+
+
 else:
     class Config(object):
         DB_URI = None
