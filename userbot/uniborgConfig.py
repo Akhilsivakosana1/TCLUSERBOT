@@ -107,11 +107,7 @@ if ENV:
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None)
         UPSTREAM_REPO = os.environ.get(
 
-            "UPSTREAM_REPO", "https://github.com/Akhilsivakosana1/TCLUSERBOT"
-
-        ))
-
-
+            "UPSTREAM_REPO", "https://github.com/Akhilsivakosana1/TCLUSERBOT", None))
 else:
     class Config(object):
         DB_URI = None
