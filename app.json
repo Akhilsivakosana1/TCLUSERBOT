@@ -29,11 +29,11 @@
     },
     "ALIVE_NAME": {
       "description": "Fill your Full name or Username like @telugucartoonlover",
-      "value": "@royalswillaspro"
+      "value": ""
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "2279350"
+      "value": ""
     },
     "REM_BG_API_KEY": {
       "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
@@ -47,19 +47,19 @@
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "aead80ba4d8b62830a90247b92821a41"
+      "value": ""
     },
     "PLUGIN_CHANNEL": {
       "description": "Create a private group add TCL group manager  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001229561683"
+      "value": ""
     },
     "PRIVATE_GROUP_ID": {
       "description": "Create a private group add TCL group manager  bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001229561683"
+      "value": ""
     },
     "STRING_SESSION": {
       "description": "Get this value from Termux Python 3",
-      "value": "1BVtsOL8Bu34jONuK3dYp3xHATsxH2ku_KX0Da0ND1ILfNv33W989cAjseiqKnH-JG7Wpn8sLZO7WyxlKgm9UXU4HSE9W81RpT7v-T4XJ55Rw7Rm04SRArvOfWK0dwuuzdwLPhdWETR7q9OdZUIynkkezchJtfTtnFFl1ZJ6aCfniklBP_iAMqG5fatzmjlbKG9PG5D5_ZWCKgiW-IzW9EQqfFnoGpfQWoz82dCt3b_rkbiBxw-6oD95g0ayLA7ZKZvg9bDSGKpQiooOPpfk14mPvR-J5kMzn4-04vivY-qxzYykdlNUrv671ithYfWc3uZhQg0nceiNxrlH2kW1wv17pljlL8sE="
+      "value": ""
     },
     "GITHUB_ACCESS_TOKEN": {
       "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
@@ -78,7 +78,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
-      "value": "1be1b306-d7b5-41ed-a835-c1657ed8c1be"
+      "value": ""
     },
     "HEROKU_APP_NAME": {
       "description": "The Value of App Name you filled in right on top.Required for updater to work.",
@@ -86,11 +86,11 @@
     },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn of inline Mode on bot settings. Get it.",
-      "value": "1433997794:AAGe6_wli-w4Yk09B97p84-sc9OAmGvCS94"
+      "value": ""
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
-      "value": "1481667840",
+      "value": "",
       "required": true
     },
     "CHROME_BIN": {
@@ -105,7 +105,7 @@
     },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot",
-      "value": "@Jdjdhisihsshbot"
+      "value": ""
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
@@ -124,7 +124,7 @@
 	
 	"SENDER_ID": {
       "description": "Get Your Id From TCL group manager Bot And Paste Your Permanent Id Here ",
-      "value": "1481667840",
+      "value": "",
       "required": true
     },
 	
