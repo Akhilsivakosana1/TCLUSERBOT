@@ -2,6 +2,9 @@ import asyncio
 import io
 import os
 
+from userbot import events, functions
+from userbot.tl.functions.users import GetFullUserRequest
+
 
 
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
