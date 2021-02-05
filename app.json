@@ -51,11 +51,11 @@
     },
     "PLUGIN_CHANNEL": {
       "description": "Create a private group add TCL group manager  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001229561683"
+      "value": "-1001159482162"
     },
     "PRIVATE_GROUP_ID": {
       "description": "Create a private group add TCL group manager  bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001229561683"
+      "value": "-1001159482162"
     },
     "STRING_SESSION": {
       "description": "Get this value from Termux Python 3",
@@ -82,7 +82,7 @@
     },
     "HEROKU_APP_NAME": {
       "description": "The Value of App Name you filled in right on top.Required for updater to work.",
-      "value": "newtestto"
+      "value": "haemparlevundhu"
     },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn of inline Mode on bot settings. Get it.",
@@ -90,7 +90,7 @@
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
-      "value": "2279350",
+      "value": "1481667840",
       "required": true
     },
     "CHROME_BIN": {
@@ -124,7 +124,7 @@
 	
 	"SENDER_ID": {
       "description": "Get Your Id From TCL group manager Bot And Paste Your Permanent Id Here ",
-      "value": "2279350",
+      "value": "1481667840",
       "required": true
     },
 	
