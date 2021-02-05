@@ -6,16 +6,16 @@ from pathlib import Path
 
 from telethon import events
 
-from fridaybot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot, client2, client3, CMD_HELP
-from fridaybot.Configs import Config
-from fridaybot.wraptools import (
+from userbot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot, client2, client3, CMD_HELP
+from userbot.Configs import Config
+from userbot.wraptools import (
     am_i_admin,
     ignore_bot,
     ignore_fwd,
     ignore_grp,
     ignore_pm,
 )
-from fridaybot.Configs import Config
+from userbot.Configs import Config
 sedprint = logging.getLogger("PLUGINS")
 cmdhandler = Config.COMMAND_HAND_LER
 bothandler = Config.BOT_HANDLER
