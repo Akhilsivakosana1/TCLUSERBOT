@@ -6,7 +6,7 @@ from pathlib import Path
 
 from telethon import events
 
-from userbot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot, client2, client3, CMD_HELP
+from userbot import CMD_LIST, LOAD_PLUG, CMD_HELP
 from userbot.Configs import Config
 from userbot.wraptools import (
     am_i_admin,
