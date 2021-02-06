@@ -77,26 +77,23 @@ async def you_dm_niqq(event):
                     pass
 
 
- @command(pattern="^.block ?(.*)")
-async def approve_p_m(event):
-    if event.fwd_from:
-        return
-    replied_user = await event.client(GetFullUserRequest(event.chat_id))
-    firstname = replied_user.user.first_name
-    event.pattern_match.group(1)
-    chat = await event.get_chat()
-    if event.is_private:
-        if chat.id == 1312124716:
-            await event.edit("You tried to block my master. GoodBye for 100 seconds! 💤")
+
+    @command(pattern="^.block ?(.*)")
+    async def approve_p_m(event):
+        if event.fwd_from:
+            return
+        replied_user = await event.client(GetFullUserRequest(event.chat_id))
+        firstname = replied_user.user.first_name
+        reason = event.pattern_match.group(1)
+        chat = await event.get_chat()
+        if event.is_private:
+          if chat.id == 1312124716:
+            await event.edit("Why You tried to block my Creator, I Dont Like That now i will sleep for 100 seconds")
             await asyncio.sleep(100)
-        else:
+          else:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit(
-                    "Get lost retard.\nBlocked [{}](tg://user?id={})".format(
-                        firstname, chat.id
-                    )
-                )
+                await event.edit(" **You Have Been Blocked **..[{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
