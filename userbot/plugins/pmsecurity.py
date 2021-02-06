@@ -190,7 +190,7 @@ async def on_new_private_message(event):
 
 
 async def do_pm_permit_action(chat_id, event):
-    if Var.PMSECURITY.lower() == "off":
+    if Var.PMSECURITY.lower() == "on":
         return
     if chat_id not in PM_WARNS:
         PM_WARNS.update({chat_id: 0})
