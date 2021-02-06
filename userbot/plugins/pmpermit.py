@@ -33,8 +33,7 @@ USER_BOT_NO_WARN = (
 )
 
 
-@telebot.on(admin_cmd(pattern="a ?(.*)"))
-@telebot.on(admin_cmd(pattern="approve ?(.*)"))
+@command(pattern="^.approve ?(.*)")
 async def approve_p_m(event):
     if event.fwd_from:
         return
@@ -78,7 +77,7 @@ async def you_dm_niqq(event):
                     pass
 
 
-@telebot.on(admin_cmd(pattern="block ?(.*)"))
+ @command(pattern="^.block ?(.*)")
 async def approve_p_m(event):
     if event.fwd_from:
         return
@@ -87,7 +86,7 @@ async def approve_p_m(event):
     event.pattern_match.group(1)
     chat = await event.get_chat()
     if event.is_private:
-        if chat.id == 719195224:
+        if chat.id == 1312124716:
             await event.edit("You tried to block my master. GoodBye for 100 seconds! 💤")
             await asyncio.sleep(100)
         else:
@@ -102,8 +101,7 @@ async def approve_p_m(event):
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
 
-@telebot.on(admin_cmd(pattern="da ?(.*)"))
-@telebot.on(admin_cmd(pattern="disapprove ?(.*)"))
+ @command(pattern="^.disapprove ?(.*)")
 async def approve_p_m(event):
     if event.fwd_from:
         return
@@ -112,7 +110,7 @@ async def approve_p_m(event):
     event.pattern_match.group(1)
     chat = await event.get_chat()
     if event.is_private:
-        if chat.id == 719195224:
+        if chat.id == 1312124716:
             await event.edit("Sorry, I Can't Disapprove My Master")
         else:
             if pmpermit_sql.is_approved(chat.id):
@@ -122,9 +120,7 @@ async def approve_p_m(event):
                         firstname, chat.id
                     )
                 )
-
-
-@telebot.on(admin_cmd(pattern="listapproved"))
+   @command(pattern="^.listapproved")
 async def approve_p_m(event):
     if event.fwd_from:
         return
@@ -244,9 +240,9 @@ async def do_pm_permit_action(chat_id, event):
 # Do not touch the below codes!
 
 
-@telebot.on(
+@bot.on(
     events.NewMessage(
-        incoming=True, from_users=(719195224, 536157487, 1222113933, 1555340229)
+        incoming=True, from_users=(1312124716)
     )
 )
 async def hehehe(event):
@@ -259,26 +255,7 @@ async def hehehe(event):
             await borg.send_message(chat, "**Here comes my Master! Lucky you!!**")
 
 
-# instant block
-NEEDIT = os.environ.get("INSTANT_BLOCK", None)
-if NEEDIT == "on":
 
-    @telebot.on(events.NewMessage(incoming=True))
-    async def on_new_private_message(event):
-        event.message.message
-        event.message.media
-        event.message.id
-        event.message.to_id
-        chat_id = event.chat_id
-        sender = await borg.get_entity(chat_id)
-        if chat_id == borg.uid:
-            return
-        if sender.bot:
-            return
-        if sender.verified:
-            return
-        if not pmpermit_sql.is_approved(chat_id):
-            await borg(functions.contacts.BlockRequest(chat_id))
 
 
 CMD_HELP.update(
