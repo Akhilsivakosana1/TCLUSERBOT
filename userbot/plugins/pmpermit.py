@@ -113,8 +113,8 @@ async def you_dm_niqq(event):
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
                 await event.edit("Disapproved [{}](tg://user?id={})".format(firstname, chat.id))
-                    )
-                )
+             
+            
     @command(pattern="^.listapproved")
     async def approve_p_m(event):
         if event.fwd_from:
