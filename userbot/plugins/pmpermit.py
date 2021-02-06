@@ -98,7 +98,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1481667840:
+            if chat.id == 1312124716:
                 await event.edit(
                     "Master , You tried to block My Creator Dont Do That Again . /nPenality :- now i will sleep for 100 seconds"
                 )
@@ -108,9 +108,8 @@ if Var.PRIVATE_GROUP_ID is not None:
                     pmpermit_sql.disapprove(chat.id)
                     await event.edit(
                         " ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\n**This is Uncool ! Now My boss Banned you Due To Spamming**[{}](tg://user?id={})".format(
-                            firstname, chat.id
-                        )
-                    )
+                            firstname, chat.id))
+
                     await asyncio.sleep(3)
                     await event.client(functions.contacts.BlockRequest(chat.id))
 
