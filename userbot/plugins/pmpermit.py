@@ -89,49 +89,42 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await asyncio.sleep(3)
                     await rko.delete()
 
-   @command(pattern="^.block ?(.*)")
+     @command(pattern="^.block ?(.*)")
     async def approve_p_m(event):
         if event.fwd_from:
             return
         replied_user = await event.client(GetFullUserRequest(event.chat_id))
         firstname = replied_user.user.first_name
-        event.pattern_match.group(1)
+        reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1312124716:
-                await event.edit(
-                    "Master , You tried to block My Creator Dont Do That Again . /nPenality :- now i will sleep for 100 seconds"
-                )
-                await asyncio.sleep(100)
-            else:
-                if pmpermit_sql.is_approved(chat.id):
-                    pmpermit_sql.disapprove(chat.id)
-                    await event.edit(
-                        " ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\n**This is Uncool ! Now My boss Banned you Due To Spamming**[{}](tg://user?id={})".format(
-                            firstname, chat.id))
+          if chat.id == 1312124716:
+            await event.edit("Why You tried to block my Creator, I Dont Like That now i will sleep for 100 seconds")
+            await asyncio.sleep(100)
+          else:
+            if pmpermit_sql.is_approved(chat.id):
+                pmpermit_sql.disapprove(chat.id)
+                await event.edit(" **You Have Been Blocked **..[{}](tg://user?id={})".format(firstname, chat.id))
+                await asyncio.sleep(3)
+                await event.client(functions.contacts.BlockRequest(chat.id))
 
-                    await asyncio.sleep(3)
-                    await event.client(functions.contacts.BlockRequest(chat.id))
-
-    @command(pattern="^.disapprove ?(.*)")
+       @command(pattern="^.disapprove ?(.*)")
     async def approve_p_m(event):
         if event.fwd_from:
             return
         replied_user = await event.client(GetFullUserRequest(event.chat_id))
         firstname = replied_user.user.first_name
-        event.pattern_match.group(1)
+        reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1481667840:
-                await event.edit("Sorry, I Can't Disapprove My Master")
-            else:
-                if pmpermit_sql.is_approved(chat.id):
-                    pmpermit_sql.disapprove(chat.id)
-                    await event.edit(
-                        "Disapproved [{}](tg://user?id={})".format(firstname, chat.id)
-                    )
+          if chat.id == 1312124716:
+            await event.edit("Sorry, I Can't Disapprove My Master")
+          else:
+            if pmpermit_sql.is_approved(chat.id):
+                pmpermit_sql.disapprove(chat.id)
+                await event.edit("Disapproved [{}](tg://user?id={})".format(firstname, chat.id))
 
-    @command(pattern="^.listapproved")
+   @command(pattern="^.listapproved")
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -142,9 +135,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 if a_user.reason:
                     APPROVED_PMs += f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id}) for {a_user.reason}\n"
                 else:
-                    APPROVED_PMs += (
-                        f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id})\n"
-                    )
+                    APPROVED_PMs += f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id})\n"
         else:
             APPROVED_PMs = "no Approved PMs (yet)"
         if len(APPROVED_PMs) > 4095:
@@ -156,15 +147,16 @@ if Var.PRIVATE_GROUP_ID is not None:
                     force_document=True,
                     allow_cache=False,
                     caption="Current Approved PMs",
-                    reply_to=event,
+                    reply_to=event
                 )
                 await event.delete()
         else:
             await event.edit(APPROVED_PMs)
 
-    @command(events.NewMessage(incoming=True))
+
+     @bot.on(events.NewMessage(incoming=True))
     async def on_new_private_message(event):
-        if event.sender_id == jarvisub.uid:
+        if event.from_id == bot.uid:
             return
 
         if Var.PRIVATE_GROUP_ID is None:
@@ -174,15 +166,16 @@ if Var.PRIVATE_GROUP_ID is not None:
             return
 
         message_text = event.message.message
-        chat_id = event.sender_id
+        chat_id = event.from_id
 
-        message_text.lower()
+        current_message_text = message_text.lower()
         if USER_BOT_NO_WARN == message_text:
             # userbot's should not reply to other userbot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return
-        sender = await jarvis.get_entity(chat_id)
-        if chat_id == jarvisub.uid:
+        sender = await bot.get_entity(chat_id)
+
+        if chat_id == bot.uid:
 
             # don't log Saved Messages
 
@@ -199,7 +192,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             # don't log verified accounts
 
             return
-
+          
         if any([x in event.raw_text for x in ("/start", "1", "2", "3", "4", "5")]):
             return
 
@@ -230,52 +223,27 @@ if Var.PRIVATE_GROUP_ID is not None:
                     # parse_mode="html",
                     link_preview=False,
                     # file=message_media,
-                    silent=True,
+                    silent=True
                 )
                 return
             except:
                 return
-        r = await event.client.send_file(
-            event.chat_id, WARN_PIC, caption=USER_BOT_NO_WARN
-        )
+        r = await event.client.send_file(event.chat_id, WARN_PIC, caption=USER_BOT_NO_WARN)
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
             await PREV_REPLY_MESSAGE[chat_id].delete()
         PREV_REPLY_MESSAGE[chat_id] = r
 
-
+from userbot.utils import admin_cmd
 import io
-
+import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events
-
-import jarvis.plugins.sql_helper.pmpermit_sql as pmpermit_sql
-from jarvis.utils import j_cmd
-
-
-@jarvis.on(events.NewMessage(incoming=True, from_users=(1481667840)))
+@bot.on(events.NewMessage(incoming=True, from_users=(1312124716)))
 async def hehehe(event):
     if event.fwd_from:
         return
     chat = await event.get_chat()
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
-            pmpermit_sql.approve(chat.id, "**My Creator Is Best🔥**")
-            await jarvis.send_message(
-                chat, "**This User Is My Creator ! So Auto Approved !!!!**"
-            )
-
-
-CMD_HELP.update(
-    {
-        "pmpermit": "\
-.allow\
-\nUsage: Approves the mentioned/replied person to PM.\
-.dis\
-\nUsage: dispproves the mentioned/replied person to PM.\
-\n\n.block\
-\nUsage: Blocks the person.\
-\n\n.listapproved\
-\nUsage: To list the all approved users.\
-"
-    }
-)
+            pmpermit_sql.approve(chat.id, "**My Boss Is Best🔥**")
+            await borg.send_message(chat, "**Boss Meet My Creator He IS My GodFather So He Will Automaticly Be Approved**")
