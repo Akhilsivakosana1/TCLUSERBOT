@@ -98,53 +98,51 @@ async def you_dm_niqq(event):
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
 
- @command(pattern="^.disapprove ?(.*)")
-async def approve_p_m(event):
-    if event.fwd_from:
-        return
-    replied_user = await event.client(GetFullUserRequest(event.chat_id))
-    firstname = replied_user.user.first_name
-    event.pattern_match.group(1)
-    chat = await event.get_chat()
-    if event.is_private:
-        if chat.id == 1312124716:
+    @command(pattern="^.disapprove ?(.*)")
+    async def approve_p_m(event):
+        if event.fwd_from:
+            return
+        replied_user = await event.client(GetFullUserRequest(event.chat_id))
+        firstname = replied_user.user.first_name
+        reason = event.pattern_match.group(1)
+        chat = await event.get_chat()
+        if event.is_private:
+          if chat.id == 728421039:
             await event.edit("Sorry, I Can't Disapprove My Master")
-        else:
+          else:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit(
-                    "[{}](tg://user?id={}) disapproved to PM.".format(
-                        firstname, chat.id
+                await event.edit("Disapproved [{}](tg://user?id={})".format(firstname, chat.id))
                     )
                 )
-   @command(pattern="^.listapproved")
-async def approve_p_m(event):
-    if event.fwd_from:
-        return
-    approved_users = pmpermit_sql.get_all_approved()
-    APPROVED_PMs = "[TeleBot] Currently Approved PMs\n"
-    if len(approved_users) > 0:
-        for a_user in approved_users:
-            if a_user.reason:
-                APPROVED_PMs += f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id}) for {a_user.reason}\n"
-            else:
-                APPROVED_PMs += f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id})\n"
-    else:
-        APPROVED_PMs = "No Approved PMs (yet)"
-    if len(APPROVED_PMs) > 4095:
-        with io.BytesIO(str.encode(APPROVED_PMs)) as out_file:
-            out_file.name = "approved.pms.text"
-            await event.client.send_file(
-                event.chat_id,
-                out_file,
-                force_document=True,
-                allow_cache=False,
-                caption="[TeleBot]Current Approved PMs",
-                reply_to=event,
-            )
-            await event.delete()
-    else:
-        await event.edit(APPROVED_PMs)
+    @command(pattern="^.listapproved")
+    async def approve_p_m(event):
+        if event.fwd_from:
+            return
+        approved_users = pmpermit_sql.get_all_approved()
+        APPROVED_PMs = "Current Approved PMs\n"
+        if len(approved_users) > 0:
+            for a_user in approved_users:
+                if a_user.reason:
+                    APPROVED_PMs += f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id}) for {a_user.reason}\n"
+                else:
+                    APPROVED_PMs += f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id})\n"
+        else:
+            APPROVED_PMs = "no Approved PMs (yet)"
+        if len(APPROVED_PMs) > 4095:
+            with io.BytesIO(str.encode(APPROVED_PMs)) as out_file:
+                out_file.name = "approved.pms.text"
+                await event.client.send_file(
+                    event.chat_id,
+                    out_file,
+                    force_document=True,
+                    allow_cache=False,
+                    caption="Current Approved PMs",
+                    reply_to=event
+                )
+                await event.delete()
+        else:
+            await event.edit(APPROVED_PMs)
 
 
 @bot.on(events.NewMessage(incoming=True))
