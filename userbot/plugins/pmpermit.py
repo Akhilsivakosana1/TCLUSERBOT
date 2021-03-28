@@ -6,7 +6,7 @@ from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 import fridaybot.modules.sql_helper.pmpermit_sql as pmpermit_sql
-from fridaybot import ALIVE_NAME, CUSTOM_PMPERMIT
+from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
 from fridaybot.Configs import Config
 from fridaybot.function import is_nsfw
 from fridaybot.utils import friday_on_cmd
