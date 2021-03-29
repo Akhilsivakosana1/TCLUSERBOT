@@ -37,7 +37,6 @@ lottie
 textblob
 python-magic
 glitch_this
-PyGithub
 pytesseract
 opencv-contrib-python
 Telethon==1.19.0
