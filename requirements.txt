@@ -81,5 +81,4 @@ youtube-search
 password_strength
 pyjokes
 cryptocompare==0.7.3
-googletrans
 pdf2docx
