@@ -39,7 +39,6 @@ python-magic
 glitch_this
 pytesseract
 opencv-contrib-python
-Telethon==1.19.0
 iplookup
 wget
 numpy
