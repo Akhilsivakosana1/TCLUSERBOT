@@ -1,6 +1,5 @@
 telethon>=1.10.3
 -r requirements-startup.txt
-Pillow
 google-trans-new
 nospamplus
 img2pdf
