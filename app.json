@@ -51,11 +51,11 @@
     },
     "PLUGIN_CHANNEL": {
       "description": "Create a private group add TCL group manager  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001159482162"
+      "value": "-1001249884332"
     },
     "PRIVATE_GROUP_ID": {
       "description": "Create a private group add TCL group manager  bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
-      "value": "-1001159482162"
+      "value": "-1001249884332"
     },
     "STRING_SESSION": {
       "description": "Get this value from Termux Python 3",
@@ -82,11 +82,11 @@
     },
     "HEROKU_APP_NAME": {
       "description": "The Value of App Name you filled in right on top.Required for updater to work.",
-      "value": "haemparlevundhu"
+      "value": "testtwotyyyypspxhh"
     },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn of inline Mode on bot settings. Get it.",
-      "value": "1433997794:AAGe6_wli-w4Yk09B97p84-sc9OAmGvCS94"
+      "value": "1750754214:AAHjoFmHngPtWYbKPNKBi2U6jDlxOCLfjo8"
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
@@ -105,7 +105,7 @@
     },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot",
-      "value": "@Jdjdhisihsshbot"
+      "value": "@Xjxjjskdkdmkdkdleebot"
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
